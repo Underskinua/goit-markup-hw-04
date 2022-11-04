@@ -125,6 +125,7 @@ img {
 }
 
 .contact-mail {
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -132,9 +133,12 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-number {
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -142,12 +146,16 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .hover a:hover,
 .hover a:focus,
 .icon-envelope:hover,
-.icon-envelope:focus {
+.icon-envelope:focus,
+.icon-smartphone:hover,
+.icon-smartphone:focus {
   color: var(--hover-color);
   fill: currentColor;
 }
@@ -159,6 +167,7 @@ img {
 
 .icon-smartphone {
   margin-right: 10px;
+  fill: currentColor;
 }
 /*--page-primary-baner-section-------*/
 .banner {
@@ -360,11 +369,15 @@ img {
   fill: var(--icon-logo-color);
 }
 .client-logo {
+  display: flex;
   border: 1px solid var(--icon-logo-color);
+  border-radius: 4px;
   padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
 }
 
-.client-logo:not(:last-child) {
+.client-logo-step:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -470,6 +483,7 @@ footer {
 
 .column {
   display: flex;
+  align-items: baseline;
 }
 
 footer a {
@@ -511,7 +525,6 @@ address li:not(:last-child) {
 }
 
 .address-social {
-  padding-top: 10px;
   margin-left: 70px;
 }
 
